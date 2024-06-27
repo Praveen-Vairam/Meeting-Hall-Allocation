@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Hall Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Meeting Hall Booking System</h1>
+    
+    <section id="bookRoom">
+        <h2>Book a Meeting Room</h2>
+        <form id="bookingForm">
+            <label for="room">Select Room:</label>
+            <select id="room">
+                <option value="Room 101">Room 101</option>
+                <option value="Room 102">Room 102</option>
+                <!-- Add more rooms as needed -->
+            </select>
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            <button type="button" onclick="bookRoom()">Book Room</button>
+        </form>
+    </section>
+
+    <section id="roomStatus">
+        <h2>Room Status</h2>
+        <ul id="bookingsList">
+            <!-- Bookings will be listed here -->
+        </ul>
+    </section>
+
+    <section id="equipment">
+        <h2>Equipment</h2>
+        <ul>
+            <li>Projector</li>
+            <li>Whiteboard</li>
+            <!-- List other equipment -->
+        </ul>
+    </section>
+
+    <section id="maintenance">
+        <h2>Maintenance Schedule</h2>
+        <ul>
+            <li>Room 101 - Monthly check</li>
+            <li>Room 102 - Quarterly check</li>
+            <!-- List other maintenance schedules -->
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
